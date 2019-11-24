@@ -1,5 +1,5 @@
 {% set name = "necromancer" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: 158678ec551e0e82dac2667a22978fddea1b1c7e5a7e69895db58befcedd4d84
+  sha256: 6d0be995dd3f69e2d03dfc6e426ab891704dd5bbb903a79730baab4352185ef0
 
 build:
   noarch: generic
