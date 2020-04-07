@@ -13,15 +13,15 @@ build:
   noarch: generic
   number: 0
   script:
-    - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem
+    - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem  # [rb26]
     - gem unpack {{ name }}-{{ version }}.gem
-  skip: {{ win }}
+  skip: {{ win }} or {{
 
 requirements:
   host:
-    - ruby >=2.6
+    - ruby
   run:
-    - ruby >=2.6
+    - ruby
 
 test:
   commands:
