@@ -13,9 +13,9 @@ build:
   noarch: generic
   number: 0
   script:
-    - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem  # [rb26]
+    - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem
     - gem unpack {{ name }}-{{ version }}.gem
-  skip: {{ win }}
+  skip: {{ win }} or {{ rb25 }}
 
 requirements:
   host:
