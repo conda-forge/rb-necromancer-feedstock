@@ -19,13 +19,13 @@ build:
 
 requirements:
   host:
-    - ruby
+    - ruby >=2.5
   run:
-    - ruby
+    - ruby >=2.5
 
 test:
   commands:
-    - ruby -r {{ name }} -e 'exit 0'  # [rb26]
+    - ruby -r {{ name }} -e 'exit 0'
 
 about:
   home: https://rubygems.org/gems/{{ name }}
@@ -37,7 +37,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - sodre
     - rluria14
     - oblute
-    - benhuff
