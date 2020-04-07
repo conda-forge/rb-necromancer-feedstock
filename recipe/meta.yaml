@@ -13,7 +13,7 @@ build:
   noarch: generic
   number: 0
   script:
-    - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem  # [rb26]
+    - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem
     - gem unpack {{ name }}-{{ version }}.gem
   skip: {{ win }}
 
@@ -25,7 +25,7 @@ requirements:
 
 test:
   commands:
-    - ruby -r {{ name }} -e 'exit 0'
+    - ruby -r {{ name }} -e 'exit 0'  # [rb26]
 
 about:
   home: https://rubygems.org/gems/{{ name }}
