@@ -15,13 +15,13 @@ build:
   script:
     - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem
     - gem unpack {{ name }}-{{ version }}.gem
-  skip: {{ win }} or {{ rb25 }}
+  skip: {{ win }}
 
 requirements:
   host:
-    - ruby
+    - ruby >=2.6
   run:
-    - ruby
+    - ruby >=2.6
 
 test:
   commands:
