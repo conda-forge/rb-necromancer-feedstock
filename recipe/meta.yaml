@@ -1,5 +1,5 @@
 {% set name = "necromancer" %}
-{% set version = "0.5.1" %}
+{% set version = "0.6.0" %}
 
 package:
   name: rb-{{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://rubygems.org/downloads/{{ name }}-{{ version }}.gem
-  sha256: 6d0be995dd3f69e2d03dfc6e426ab891704dd5bbb903a79730baab4352185ef0
+  sha256: a41cfc815eb8486dcc1a837b2a0b28b992b7ecee4125015e9bc40c2c83b8b13d
 
 build:
   noarch: generic
   number: 0
   script:
-    - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem
+    - gem install --norc -l -V --ignore-dependencies {{ name }}-{{ version }}.gem  # [osx and rb25]
     - gem unpack {{ name }}-{{ version }}.gem
   skip: {{ win }}
 
