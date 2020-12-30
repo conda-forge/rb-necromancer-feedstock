@@ -5,11 +5,11 @@ Home: https://rubygems.org/gems/necromancer
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rb-necromancer-feedstock/blob/master/LICENSE.txt)
 
 Summary: Conversion from one object type to another with a bit of black magic.
 
-
+Development: https://github.com/piotrmurach/necromancer
 
 Current build status
 ====================
@@ -116,8 +116,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@benhuff](https://github.com/benhuff/)
 * [@oblute](https://github.com/oblute/)
 * [@rluria14](https://github.com/rluria14/)
-* [@sodre](https://github.com/sodre/)
 
